@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzeuz Chat Group - Connect & Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1 class="chat-title"><i class="fas fa-comments"></i> Kenzeuz Chat Group</h1>
+            <div class="user-info">
+                <span id="usernameDisplay">Guest</span>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <main class="chat-main" id="chatMain">
+            <div class="messages" id="messages">
+                <div class="message system-message">
+                    Welcome to Kenzeuz Chat Group! Please be respectful.
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button id="sendButton"><i class="fas fa-paper-plane"></i> Send</button>
+            </div>
+        </main>
+
+        <div class="user-modal" id="userModal">
+            <div class="modal-content">
+                <h2>Set Your Username</h2>
+                <input type="text" id="usernameInput" placeholder="Enter your username" maxlength="15">
+                <button id="saveUsernameButton">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
